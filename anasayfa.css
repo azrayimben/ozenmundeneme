@@ -16,6 +16,30 @@ h1, h2, h3 {
   margin: 0;
 }
 
+/* Tablet için (768px ve altı) */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+    margin: 10px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column; /* yan yana yerine alt alta */
+  }
+}
+
+/* Telefon için (480px ve altı) */
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+    margin: 5px;
+  }
+
+  nav ul {
+    flex-direction: column; /* menüyü alt alta yap */
+  }
+}
 /* HEADER */
 header {
   display: flex;
@@ -202,3 +226,4 @@ footer img {
     height: 80px;
   margin-right: 40px;
 }
+
